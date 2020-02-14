@@ -82,6 +82,8 @@ public class PlatformerController2D : MonoBehaviour
 
 	int facing = 1;
 
+	int numLives = 4;
+
 	void Start ()
 	{
 		lastInputFlip = float.NegativeInfinity;
@@ -89,6 +91,7 @@ public class PlatformerController2D : MonoBehaviour
 		canMove = true;
 		rb2d = GetComponent<Rigidbody2D> ();
 		sr = GetComponent<SpriteRenderer> ();
+		numLives = 4;
 	}
 
 	/// <summary>
@@ -327,9 +330,27 @@ public class PlatformerController2D : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Spike")
+        if (collision.gameObject.tag.Equals("Spike"))
         {
-			Debug.Log("die");
+			numLives--;
+            if(numLives == 0)
+            {
+				die();
+            }
+		}
+
+		if (collision.gameObject.tag.Equals("Enemy"))
+		{
+			numLives--;
+			if (numLives == 0)
+			{
+				die();
+			}
 		}
 	}
+
+    private void die()
+    {
+		Debug.Log("die"); //Restart level or end game?
+    }
 }
