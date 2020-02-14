@@ -121,6 +121,8 @@ public class PlatformerController2D : MonoBehaviour
         // reset jump input every FixedUpdate to buffer from Update based input
         _inputJump = false;
 		_inputFlip = false;
+
+
 	}
 
 	Vector2 ApplyJump (Vector2 vel)
@@ -320,6 +322,14 @@ public class PlatformerController2D : MonoBehaviour
 				Debug.DrawLine (groundCheckStart, groundCheckStart + Vector2.down * groundCheckDepth, Color.red);
 				groundCheckStart += Vector2.right * (1.0f / (groundCheckRayCount - 1.0f)) * groundCheckWidth;
 			}
+		}
+	}
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Spike")
+        {
+			Debug.Log("die");
 		}
 	}
 }
