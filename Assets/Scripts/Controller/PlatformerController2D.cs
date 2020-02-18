@@ -84,6 +84,10 @@ public class PlatformerController2D : MonoBehaviour
 
 	int numLives = 4;
 
+	int coinScore = 0;
+
+
+
 	void Start ()
 	{
 		lastInputFlip = float.NegativeInfinity;
@@ -347,9 +351,29 @@ public class PlatformerController2D : MonoBehaviour
 				die();
 			}
 		}
+
 	}
 
-    private void die()
+    //if player collides with coin, adds to  coinScore 
+	private void OnTriggerEnter2D(Collider2D col)
+	{
+		Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time);
+		if (col.CompareTag("coin"))
+		{
+
+			Debug.Log("collided with coin");
+			coinScore++;
+			//scoreKeeper.GetComponent<Timer>().addScore(coinScore);
+			Destroy(col.gameObject);
+			Debug.Log("score is: " + coinScore);
+
+		}
+	}
+
+
+
+
+	private void die()
     {
 		Debug.Log("die"); //Restart level or end game?
     }

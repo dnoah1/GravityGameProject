@@ -7,14 +7,15 @@ public class Timer : MonoBehaviour
 { 
 private string welcomeMsg = "Welcome to Gravity game\n heres what to do..";
 private float timeLeft = 60f;
-private int score = 0;
-private GameObject[] coins;
+ 
+//private int score = 0;
+//private GameObject[] coins;
 
     // Start is called before the first frame update
     void Start()
     {
     // finds the prefabs for Coin tagged with coins
-    coins = GameObject.FindGameObjectsWithTag("coins"); 
+    GameObject.FindGameObjectsWithTag("coin"); 
     }
 
     private void OnGUI()
@@ -24,10 +25,10 @@ private GameObject[] coins;
 
     }
 
-    private string ScoreString()
-    {
-        return "Score" + score;
-    }
+    //private string ScoreString(int coinScore)
+    //{
+    //    return "Score" + score;
+    //}
 
     private string TimeLeft()
     {
@@ -35,35 +36,35 @@ private GameObject[] coins;
     }
 
     // need to get a coinScore script system
-    public void addScore (int CoinScore)
-    {
-        Debug.Log("Coin score" + CoinScore);
-        score += CoinScore;
-        Debug.Log("score" + score);
+    //public void addScore (int CoinScore)
+    //{
+    //    Debug.Log("Coin score" + CoinScore);
+    //    score += CoinScore;
+    //    Debug.Log("score" + score);
 
 
-    }
+    //}
     // Update is called once per frame
     void Update()
     {
-        checkWin();
+        //checkWin();
         timeLeft -= Time.deltaTime;
     }
 
-    void checkWin()
-    {
-        bool completed = true;
-        foreach (GameObject temp in coins)
-        {
-            //if (!temp.GetComponent<Coin>().poopedOn)
-            //{
-            //    completed = false;
-            //}
+//    void checkWin()
+//    {
+//        bool completed = true;
+//       // foreach (GameObject temp in coins)
+//        {
+//            //if (!temp.GetComponent<Coin>().)
+//            //{
+//            //    completed = false;
+//            //}
 
-        }
-        if (completed)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-    }
+//        }
+//        if (completed)
+//        {
+//            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+//        }
+//    }
 }
