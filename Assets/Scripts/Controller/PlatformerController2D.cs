@@ -4,6 +4,7 @@
 // <author>Benno Lueders</author>
 // <date>07/14/2017</date>
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -82,7 +83,7 @@ public class PlatformerController2D : MonoBehaviour
 
 	int facing = 1;
 
-	int numLives = 4;
+	int numLives = 1;
 
 	void Start ()
 	{
@@ -332,25 +333,63 @@ public class PlatformerController2D : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Spike"))
         {
-			numLives--;
-            if(numLives == 0)
+			hurt();
+			Debug.Log(numLives);
+			if (numLives == 0)
             {
 				die();
             }
+
 		}
 
+		//if (collision.gameObject.tag.Equals("Enemy"))
+		//{
+		//	numLives--;
+		//	if (numLives == 0)
+		//	{
+		//		die();
+		//	}
+		//}
+	}
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
 		if (collision.gameObject.tag.Equals("Enemy"))
-		{
-			numLives--;
+        {
+			hurt();
+			Debug.Log(numLives);
 			if (numLives == 0)
 			{
 				die();
 			}
 		}
+
 	}
 
     private void die()
     {
 		Debug.Log("die"); //Restart level or end game?
     }
+
+    private void hurt()
+    {
+		numLives--;
+		StartCoroutine(blinkSprite());
+		
+ 
+	}
+
+
+    private IEnumerator blinkSprite()
+	{
+		for (var n = 0; n < 5; n++)
+		{
+			sr.enabled = true;
+			yield return new WaitForSeconds(0.1f);
+			sr.enabled = false;
+			yield return new WaitForSeconds(0.1f);
+
+		}
+		sr.enabled = true;
+	}
 }
