@@ -267,7 +267,7 @@ public class PlatformerController2D : MonoBehaviour
 	/// <returns><c>true</c>, if to flip was permissioned, <c>false</c> otherwise.</returns>
 	bool PermissionToFlip()
 	{
-        bool wasJustgrounded = Time.time < lostGroundingTime + groundingToleranceTimer;
+		bool wasJustgrounded = Time.time < lostGroundingTime + groundingToleranceTimer;
         bool hasJustFlipped = Time.time <= lastFlipTime + Time.deltaTime;
 		return (grounded || wasJustgrounded) && !hasJustFlipped;
 	}
@@ -387,8 +387,6 @@ public class PlatformerController2D : MonoBehaviour
     {
 		numLives--;
 		StartCoroutine(blinkSprite());
-
-
 	}
 
 
