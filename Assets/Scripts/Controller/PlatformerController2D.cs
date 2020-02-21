@@ -363,22 +363,18 @@ public class PlatformerController2D : MonoBehaviour
 			}
 		}
 
-	}
-
-    //if player collides with coin, adds to  coinScore
-	private void OnTriggerEnter2D(Collider2D col)
-	{
-		Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time);
-		if (col.CompareTag("coin"))
+        Debug.Log(collision.gameObject.name + " : " + gameObject.name + " : " + Time.time);
+		if (collision.CompareTag("coin"))
 		{
 
 			Debug.Log("collided with coin");
 			coinScore++;
 			//scoreKeeper.GetComponent<Timer>().addScore(coinScore);
-			Destroy(col.gameObject);
+			Destroy(collision.gameObject);
 			Debug.Log("score is: " + coinScore);
 
 		}
+
 	}
 
 
