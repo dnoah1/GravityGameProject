@@ -4,6 +4,7 @@
 // <author>Benno Lueders</author>
 // <date>07/14/2017</date>
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -86,7 +87,7 @@ public class PlatformerController2D : MonoBehaviour
 
 	int coinScore = 0;
 
-
+	int numLives = 1;
 
 	void Start ()
 	{
@@ -144,7 +145,7 @@ public class PlatformerController2D : MonoBehaviour
 
 	void ApplyFlip()
 	{
-		
+
 		lastFlipTime = Time.time;
         grounded = false;
 
@@ -166,7 +167,7 @@ public class PlatformerController2D : MonoBehaviour
     }
 
 	/// <summary>
-	/// Updates grounded and lastGroundingTime. 
+	/// Updates grounded and lastGroundingTime.
 	/// </summary>
 	void UpdateGrounding ()
 	{
@@ -304,7 +305,7 @@ public class PlatformerController2D : MonoBehaviour
 	}
 
 	/// <summary>
-	/// Make the object controlled by this instance jump immediately. 
+	/// Make the object controlled by this instance jump immediately.
 	/// </summary>
 	/// <param name="strength">Strength.</param>
 	public void ForceJump (float strength)
@@ -333,16 +334,31 @@ public class PlatformerController2D : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Spike"))
         {
-			numLives--;
-            if(numLives == 0)
+			hurt();
+			Debug.Log(numLives);
+			if (numLives == 0)
             {
 				die();
             }
+
 		}
 
+		//if (collision.gameObject.tag.Equals("Enemy"))
+		//{
+		//	numLives--;
+		//	if (numLives == 0)
+		//	{
+		//		die();
+		//	}
+		//}
+	}
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
 		if (collision.gameObject.tag.Equals("Enemy"))
-		{
-			numLives--;
+        {
+			hurt();
+			Debug.Log(numLives);
 			if (numLives == 0)
 			{
 				die();
@@ -351,7 +367,7 @@ public class PlatformerController2D : MonoBehaviour
 
 	}
 
-    //if player collides with coin, adds to  coinScore 
+    //if player collides with coin, adds to  coinScore
 	private void OnTriggerEnter2D(Collider2D col)
 	{
 		Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time);
@@ -368,10 +384,30 @@ public class PlatformerController2D : MonoBehaviour
 	}
 
 
-
-
-	private void die()
+    private void die()
     {
 		Debug.Log("die"); //Restart level or end game?
     }
+
+    private void hurt()
+    {
+		numLives--;
+		StartCoroutine(blinkSprite());
+
+
+	}
+
+
+    private IEnumerator blinkSprite()
+	{
+		for (var n = 0; n < 5; n++)
+		{
+			sr.enabled = true;
+			yield return new WaitForSeconds(0.1f);
+			sr.enabled = false;
+			yield return new WaitForSeconds(0.1f);
+
+		}
+		sr.enabled = true;
+	}
 }
