@@ -83,8 +83,6 @@ public class PlatformerController2D : MonoBehaviour
 
 	int facing = 1;
 
-	int numLives = 4;
-
 	int coinScore = 0;
 
 	int numLives = 1;
