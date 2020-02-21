@@ -136,9 +136,6 @@ public class PlatformerController2D : MonoBehaviour
 	{
 		float relativeJumpVelocity = jumpVelocity;
         if(gravity < 0) { relativeJumpVelocity = -jumpVelocity;  }
-		Debug.Log("jump");
-		Debug.Log(relativeJumpVelocity);
-
 		vel.y = relativeJumpVelocity;
 		lastJumpTime = Time.time;
 		grounded = false;
