@@ -28,6 +28,9 @@ public class CameraController2D : MonoBehaviour
 	[Tooltip ("minimum speed of the camera to follow the target.")]
 	[SerializeField] float minSpeed = 1;
 
+	[Tooltip("Background that moves.")]
+	[SerializeField] GameObject background;
+
 	[Header("ScrenShake")]
 	[Tooltip ("How long is a strong standart screen shake.")]
 	[SerializeField] float shakeTimeStandardStrong = 0.5f;
@@ -44,6 +47,8 @@ public class CameraController2D : MonoBehaviour
 	static CameraController2D instance;
 	Vector3 offset;
 
+	float lastPos;
+
 	void Awake ()
 	{
 		offset = new Vector3 (0, 0, transform.position.z);
@@ -52,6 +57,17 @@ public class CameraController2D : MonoBehaviour
 
 	void Update ()
 	{
+
+        Vector3 bgPos = background.transform.position;
+		Debug.Log(transform.position.x);
+		if (transform.position.x != lastPos) {
+			lastPos = transform.position.x;
+		}
+
+		bgPos.x = lastPos/3;
+    	background.transform.position = bgPos;
+
+
 		if (target == null) {
 			return;
 		}
@@ -76,6 +92,7 @@ public class CameraController2D : MonoBehaviour
 		}
 
 		transform.position = newPos;
+
 	}
 
 	// Draw outline of movement area when selected in the editor
