@@ -66,13 +66,13 @@ public class PlatformerController2D : MonoBehaviour
 	[Header("GameObjects")]
 	[Tooltip("Used to get positioning")]
 	public GameObject groundObject;
-	public GameObject groundCollider;
+	
 
 	SpriteRenderer sr = null;
     int currentFrame = 0;
     float animationTimer = 0;
 
-    bool grounded = false;
+    bool grounded = true;
 	Rigidbody2D rb2d = null;
 
 	float lostGroundingTime = 0;
@@ -82,6 +82,7 @@ public class PlatformerController2D : MonoBehaviour
 	float lastInputFlip = 0;
 
 	int facing = 1;
+	int raycastMultiplier = 1;
 
 	int coinScore = 0;
 
@@ -133,6 +134,7 @@ public class PlatformerController2D : MonoBehaviour
 
 	Vector2 ApplyJump (Vector2 vel)
 	{
+		Debug.Log("jump");
 		float relativeJumpVelocity = jumpVelocity;
         if(gravity < 0) { relativeJumpVelocity = -jumpVelocity;  }
 		vel.y = relativeJumpVelocity;
@@ -143,7 +145,7 @@ public class PlatformerController2D : MonoBehaviour
 
 	void ApplyFlip()
 	{
-
+		Debug.Log("flip");
 		lastFlipTime = Time.time;
         grounded = false;
 
@@ -152,7 +154,7 @@ public class PlatformerController2D : MonoBehaviour
 		transform.localScale = tmp;
 
 		SpriteRenderer groundSprite = groundObject.GetComponent<SpriteRenderer>();
-		float groundHeight = (groundSprite.GetComponent<BoxCollider2D>().bounds.size.y) + (float)0.5;
+		float groundHeight = ((groundSprite.GetComponent<BoxCollider2D>().size.y + groundSprite.GetComponent<BoxCollider2D>().offset.y)* groundSprite.GetComponent<BoxCollider2D>().transform.localScale.y) + 2.5f;
         if(gravity < 0)
         {
 			groundHeight = groundHeight * (-1);
@@ -161,6 +163,8 @@ public class PlatformerController2D : MonoBehaviour
 
 		transform.Translate(0,-groundHeight,0);
         gravity = -gravity;
+		raycastMultiplier *= (-1);
+
 
     }
 
@@ -173,7 +177,7 @@ public class PlatformerController2D : MonoBehaviour
 		Vector2 groundCheckStart = groudCheckCenter + Vector2.left * groundCheckWidth * 0.5f;
 		if (groundCheckRayCount > 1) {
 			for (int i = 0; i < groundCheckRayCount; i++) {
-				RaycastHit2D hit = Physics2D.Raycast (groundCheckStart, Vector2.down, groundCheckDepth, groundLayers);
+				RaycastHit2D hit = Physics2D.Raycast (groundCheckStart, Vector2.down*(raycastMultiplier), groundCheckDepth, groundLayers);
 				if (hit.collider != null) {
 					grounded = true;
 					return;
@@ -296,6 +300,7 @@ public class PlatformerController2D : MonoBehaviour
 	/// <param name="force">Force to push the character back</param>
 	public void Pushback (Vector2 force)
 	{
+		Debug.Log("pushback");
 		rb2d.velocity = force;
 		lastJumpTime = Time.time;
 		grounded = false;
@@ -308,6 +313,7 @@ public class PlatformerController2D : MonoBehaviour
 	/// <param name="strength">Strength.</param>
 	public void ForceJump (float strength)
 	{
+		Debug.Log("forcejump");
 		rb2d.velocity = new Vector2 (rb2d.velocity.x, strength);
 		lastJumpTime = Time.time;
 		grounded = false;
@@ -322,7 +328,7 @@ public class PlatformerController2D : MonoBehaviour
 		Vector2 groundCheckStart = groudCheckCenter + Vector2.left * groundCheckWidth * 0.5f;
 		if (groundCheckRayCount > 1) {
 			for (int i = 0; i < groundCheckRayCount; i++) {
-				Debug.DrawLine (groundCheckStart, groundCheckStart + Vector2.down * groundCheckDepth, Color.red);
+				Debug.DrawLine (groundCheckStart, groundCheckStart + Vector2.down * groundCheckDepth * (raycastMultiplier), Color.red);
 				groundCheckStart += Vector2.right * (1.0f / (groundCheckRayCount - 1.0f)) * groundCheckWidth;
 			}
 		}

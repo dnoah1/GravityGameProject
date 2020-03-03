@@ -59,7 +59,6 @@ public class CameraController2D : MonoBehaviour
 	{
 
         Vector3 bgPos = background.transform.position;
-		Debug.Log(transform.position.x);
 		if (transform.position.x != lastPos) {
 			lastPos = transform.position.x;
 		}
