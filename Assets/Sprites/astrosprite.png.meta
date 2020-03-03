@@ -1,0 +1,511 @@
+fileFormatVersion: 2
+guid: 797aa81e896184290a800dcf6bd712f5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5816883202690576654
+    second: astrosprite_0
+  - first:
+      213: 1640223509004458178
+    second: astrosprite_1
+  - first:
+      213: 5173003454508534142
+    second: astrosprite_2
+  - first:
+      213: -5860918043706819109
+    second: astrosprite_3
+  - first:
+      213: 3892162365209782860
+    second: astrosprite_4
+  - first:
+      213: -7041354266979405040
+    second: astrosprite_5
+  - first:
+      213: 2264244790217780995
+    second: astrosprite_6
+  - first:
+      213: -1377965570276837033
+    second: astrosprite_7
+  - first:
+      213: -2660322265350732264
+    second: astrosprite_8
+  - first:
+      213: -9129707522925679674
+    second: astrosprite_9
+  - first:
+      213: -4788709720786732240
+    second: astrosprite_10
+  - first:
+      213: -9040690896426250461
+    second: astrosprite_11
+  - first:
+      213: -7657417420840728209
+    second: astrosprite_12
+  - first:
+      213: 3931024798308943935
+    second: astrosprite_13
+  - first:
+      213: 514724799829563983
+    second: astrosprite_14
+  - first:
+      213: -1402302032365340324
+    second: astrosprite_15
+  - first:
+      213: -1242960288507871483
+    second: astrosprite_16
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: astrosprite_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 808
+        width: 130
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e237e4751e744b7193f6715512fbc7f
+      internalID: 5816883202690576654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrosprite_1
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 802
+        width: 139
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e37a99ddd4ae412ead1453a57170a96
+      internalID: 1640223509004458178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrosprite_2
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 805
+        width: 129
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eebf3043c206444abbcfa9d9877b7cef
+      internalID: 5173003454508534142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrosprite_3
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 814
+        width: 126
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5d47d7c21394b9481b10cf05fc6d1f
+      internalID: -5860918043706819109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrosprite_4
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 818
+        width: 104
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe984a096d1d4a42be0bac8332e97fe
+      internalID: 3892162365209782860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrosprite_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 625
+        width: 121
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83eee5ec2c0e24595b53c2a167a111e7
+      internalID: -7041354266979405040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrosprite_6
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 625
+        width: 124
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248a5469a7a094a50ab4c95cb9bb4a38
+      internalID: 2264244790217780995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrosprite_7
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 618
+        width: 143
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97898b8cf40b344f094c3c902c3fd8f0
+      internalID: -1377965570276837033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrosprite_8
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 612
+        width: 146
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44b888f6777949a9895fb013ae576ab
+      internalID: -2660322265350732264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrosprite_9
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 612
+        width: 142
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2f093f4d9a9456fa6ba9f2853a8f4a
+      internalID: -9129707522925679674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrosprite_10
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 410
+        width: 136
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4df9223982a343699d3428823b4d83d
+      internalID: -4788709720786732240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrosprite_11
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 409
+        width: 139
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b4285184edf4ee99a11aab5af90899
+      internalID: -9040690896426250461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrosprite_12
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 409
+        width: 133
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069553e4ccfe54067afad331fd6e9bd5
+      internalID: -7657417420840728209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrosprite_13
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 403
+        width: 123
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4c302bdf67543739cd3fdf55804523
+      internalID: 3931024798308943935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrosprite_14
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 420
+        width: 127
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05835068e48f47dab5ee4bc1779978a
+      internalID: 514724799829563983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrosprite_15
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 425
+        width: 133
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85be0d1c1b4d14129a4741426170d5d3
+      internalID: -1402302032365340324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: astrosprite_16
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 414
+        width: 98
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ebb8a12f18f49108d339298f6b052a
+      internalID: -1242960288507871483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
