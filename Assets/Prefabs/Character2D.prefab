@@ -148,7 +148,6 @@ MonoBehaviour:
   - {fileID: -1402302032365340324, guid: 797aa81e896184290a800dcf6bd712f5, type: 3}
   groundObject: {fileID: 6547658771188781760, guid: 242e9120604204cd78834d07ecb3a61b,
     type: 3}
-  groundCollider: {fileID: 0}
 --- !u!114 &114689833290857144
 MonoBehaviour:
   m_ObjectHideFlags: 0

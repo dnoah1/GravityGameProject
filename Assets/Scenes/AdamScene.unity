@@ -284,6 +284,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114201831273264340, guid: a9e48ad772845c94b95626d3a3e0b25a,
         type: 3}
+      propertyPath: movingFrames.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114201831273264340, guid: a9e48ad772845c94b95626d3a3e0b25a,
+        type: 3}
+      propertyPath: idleFrames.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114201831273264340, guid: a9e48ad772845c94b95626d3a3e0b25a,
+        type: 3}
       propertyPath: canMove
       value: 0
       objectReference: {fileID: 0}
@@ -291,6 +301,59 @@ PrefabInstance:
         type: 3}
       propertyPath: groundCheckDepth
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114201831273264340, guid: a9e48ad772845c94b95626d3a3e0b25a,
+        type: 3}
+      propertyPath: movingFrames.Array.data[4]
+      value: 
+      objectReference: {fileID: -1377965570276837033, guid: 797aa81e896184290a800dcf6bd712f5,
+        type: 3}
+    - target: {fileID: 114201831273264340, guid: a9e48ad772845c94b95626d3a3e0b25a,
+        type: 3}
+      propertyPath: movingFrames.Array.data[5]
+      value: 
+      objectReference: {fileID: -2660322265350732264, guid: 797aa81e896184290a800dcf6bd712f5,
+        type: 3}
+    - target: {fileID: 114201831273264340, guid: a9e48ad772845c94b95626d3a3e0b25a,
+        type: 3}
+      propertyPath: movingFrames.Array.data[6]
+      value: 
+      objectReference: {fileID: -9129707522925679674, guid: 797aa81e896184290a800dcf6bd712f5,
+        type: 3}
+    - target: {fileID: 114201831273264340, guid: a9e48ad772845c94b95626d3a3e0b25a,
+        type: 3}
+      propertyPath: movingFrames.Array.data[7]
+      value: 
+      objectReference: {fileID: -4788709720786732240, guid: 797aa81e896184290a800dcf6bd712f5,
+        type: 3}
+    - target: {fileID: 114201831273264340, guid: a9e48ad772845c94b95626d3a3e0b25a,
+        type: 3}
+      propertyPath: movingFrames.Array.data[8]
+      value: 
+      objectReference: {fileID: -9040690896426250461, guid: 797aa81e896184290a800dcf6bd712f5,
+        type: 3}
+    - target: {fileID: 114201831273264340, guid: a9e48ad772845c94b95626d3a3e0b25a,
+        type: 3}
+      propertyPath: airFrames.Array.data[0]
+      value: 
+      objectReference: {fileID: 3892162365209782860, guid: 797aa81e896184290a800dcf6bd712f5,
+        type: 3}
+    - target: {fileID: 114201831273264340, guid: a9e48ad772845c94b95626d3a3e0b25a,
+        type: 3}
+      propertyPath: airFrames.Array.data[1]
+      value: 
+      objectReference: {fileID: -7041354266979405040, guid: 797aa81e896184290a800dcf6bd712f5,
+        type: 3}
+    - target: {fileID: 114201831273264340, guid: a9e48ad772845c94b95626d3a3e0b25a,
+        type: 3}
+      propertyPath: airFrames.Array.data[2]
+      value: 
+      objectReference: {fileID: 2264244790217780995, guid: 797aa81e896184290a800dcf6bd712f5,
+        type: 3}
+    - target: {fileID: 114201831273264340, guid: a9e48ad772845c94b95626d3a3e0b25a,
+        type: 3}
+      propertyPath: animationFPS
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9e48ad772845c94b95626d3a3e0b25a, type: 3}
