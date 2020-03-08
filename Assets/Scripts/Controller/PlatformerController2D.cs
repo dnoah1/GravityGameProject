@@ -401,11 +401,13 @@ public class PlatformerController2D : MonoBehaviour
 		for (var n = 0; n < 5; n++)
 		{
 			sr.enabled = true;
+            sr.material.SetColor("_Color", Color.red);
 			yield return new WaitForSeconds(0.1f);
 			sr.enabled = false;
 			yield return new WaitForSeconds(0.1f);
 
 		}
+		sr.material.SetColor("_Color", Color.white);
 		sr.enabled = true;
 	}
 }
