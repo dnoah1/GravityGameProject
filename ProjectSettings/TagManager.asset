@@ -9,6 +9,7 @@ TagManager:
   - Spike
   - Ground
   - Block
+  - Boundary
   layers:
   - Default
   - TransparentFX

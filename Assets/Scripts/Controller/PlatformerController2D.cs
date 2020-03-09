@@ -366,6 +366,12 @@ public class PlatformerController2D : MonoBehaviour
 
 		}
 
+		if (collision.gameObject.tag.Equals("Boundary"))
+		{
+			die();
+			
+		}
+
 		//if (collision.gameObject.tag.Equals("Enemy"))
 		//{
 		//	numLives--;
