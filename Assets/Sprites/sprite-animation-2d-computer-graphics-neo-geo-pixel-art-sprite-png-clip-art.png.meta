@@ -1,0 +1,379 @@
+fileFormatVersion: 2
+guid: aa37dc8d45f6c4c839c99ebb8f6501ce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -32050057459861976
+    second: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_0
+  - first:
+      213: 1588519412307831825
+    second: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_1
+  - first:
+      213: -4831940489517171252
+    second: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_2
+  - first:
+      213: -8308829074513972434
+    second: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_3
+  - first:
+      213: -5244668773174090027
+    second: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_4
+  - first:
+      213: -8822760804957081232
+    second: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_5
+  - first:
+      213: -4027118401372963264
+    second: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_6
+  - first:
+      213: -5212588294967857802
+    second: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_7
+  - first:
+      213: 7496875561986550884
+    second: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_8
+  - first:
+      213: -4972937472138144258
+    second: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_9
+  - first:
+      213: -5879984331097362383
+    second: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_10
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 1, z: 0, w: 2}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_2
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 90
+        width: 52
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc8f1e1549ea34af98ff8bb24f0f9040
+      internalID: -4831940489517171252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_3
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 92
+        width: 51
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818d0300db5e4414eaf0a8a70da5c7ac
+      internalID: -8308829074513972434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_0
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 96
+        width: 51
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af623b961328944748c92ea5ee72f4c6
+      internalID: -32050057459861976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_1
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 96
+        width: 51
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c042be06a167b4957876b40de199799e
+      internalID: 1588519412307831825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_4
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 92
+        width: 50
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734db731edbdf4f3a97c010476678174
+      internalID: -5244668773174090027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_5
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 91
+        width: 50
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7ea9ee70c864d119e6c29d9e26f821
+      internalID: -8822760804957081232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_6
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 94
+        width: 51
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b56369bad8df4b1db598d658483b8fa
+      internalID: -4027118401372963264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_7
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 96
+        width: 51
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a87188749b5450a97acd7810002dcc
+      internalID: -5212588294967857802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_8
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 94
+        width: 52
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2fd646594574c51bfbd32eb3080560
+      internalID: 7496875561986550884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_9
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 92
+        width: 54
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3638fff6a1d4aebafb53fd366968dc
+      internalID: -4972937472138144258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-animation-2d-computer-graphics-neo-geo-pixel-art-sprite-png-clip-art_10
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 92
+        width: 51
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1931b60d719b4f04b16dda9c33eb1d3
+      internalID: -5879984331097362383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

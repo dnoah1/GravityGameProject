@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4512442853584016}
   - component: {fileID: 20279101516616938}
-  - component: {fileID: 92934379418210644}
   - component: {fileID: 124731312615493452}
   - component: {fileID: 81001020290315072}
   - component: {fileID: 114250397746916712}
@@ -44,7 +43,7 @@ Camera:
   m_GameObject: {fileID: 1540405701702404}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -78,14 +77,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!92 &92934379418210644
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540405701702404}
-  m_Enabled: 1
 --- !u!124 &124731312615493452
 Behaviour:
   m_ObjectHideFlags: 0
@@ -121,6 +112,7 @@ MonoBehaviour:
   yMax: 2.06
   lerp: 5
   minSpeed: 5
+  background: {fileID: 0}
   shakeTimeStandardStrong: 0.5
   strengthStandardStrong: 0.5
   shakeTimeStandardLight: 0.2
