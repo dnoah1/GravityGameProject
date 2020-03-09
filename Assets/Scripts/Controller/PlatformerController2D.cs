@@ -73,6 +73,7 @@ public class PlatformerController2D : MonoBehaviour
     float animationTimer = 0;
 
     bool grounded = true;
+	bool touchingGround = true;
 	Rigidbody2D rb2d = null;
 
 	float lostGroundingTime = 0;
@@ -178,8 +179,13 @@ public class PlatformerController2D : MonoBehaviour
 		if (groundCheckRayCount > 1) {
 			for (int i = 0; i < groundCheckRayCount; i++) {
 				RaycastHit2D hit = Physics2D.Raycast (groundCheckStart, Vector2.down*(raycastMultiplier), groundCheckDepth, groundLayers);
+				touchingGround = false;
 				if (hit.collider != null) {
 					grounded = true;
+                    if (hit.collider.gameObject.CompareTag("Ground"))
+                    {
+						touchingGround = true;
+                    }
 					return;
 				}
 				groundCheckStart += Vector2.right * (1.0f / (groundCheckRayCount - 1.0f)) * groundCheckWidth;
@@ -273,7 +279,7 @@ public class PlatformerController2D : MonoBehaviour
 	{
 		bool wasJustgrounded = Time.time < lostGroundingTime + groundingToleranceTimer;
         bool hasJustFlipped = Time.time <= lastFlipTime + Time.deltaTime;
-		return (grounded || wasJustgrounded) && !hasJustFlipped;
+		return (grounded || wasJustgrounded) && !hasJustFlipped && touchingGround;
 	}
 
 	/// <summary>
