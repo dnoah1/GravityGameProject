@@ -412,8 +412,8 @@ public class PlatformerController2D : MonoBehaviour
     private void hurt()
     {
 		numLives--;
-		gameManager.DecreaseLives();
-		StartCoroutine(blinkSprite());
+        gameManager.DecreaseLives();
+        StartCoroutine(blinkSprite());
 	}
 
 
