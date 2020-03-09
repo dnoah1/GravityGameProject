@@ -8,6 +8,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; 
 
 /// <summary>
 /// Script for general purpose 2D controls for any object that can move and jump when grounded.
@@ -86,6 +87,9 @@ public class PlatformerController2D : MonoBehaviour
 	int coinScore = 0;
 
 	int numLives = 1;
+
+	public bool isImgOn;
+	public Image spPart;
 
 	void Start ()
 	{
@@ -369,9 +373,9 @@ public class PlatformerController2D : MonoBehaviour
 
 			Debug.Log("collided with coin");
 			coinScore++;
-			//scoreKeeper.GetComponent<Timer>().addScore(coinScore);
 			Destroy(collision.gameObject);
 			Debug.Log("score is: " + coinScore);
+			
 
 		}
 

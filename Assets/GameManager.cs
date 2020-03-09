@@ -1,15 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Timer : MonoBehaviour
-{ 
+public class GameManager : MonoBehaviour
+{
     private string welcomeMsg = "Welcome to Gravity game\n heres what to do..";
 
     private int spacePartsColl;
 
-    public static Timer instance;
+    public static GameManager instance;
 
     private void Awake()
     {
@@ -24,18 +23,18 @@ public class Timer : MonoBehaviour
     void OnGUI()
     {
         GUI.Label(new Rect(10, 10, 100, 100), welcomeMsg);
-        GUI.Label(new Rect(10, 110, 500, 40),"Parts Collected = " + spacePartsColl);
+        GUI.Label(new Rect(10, 110, 500, 40), "Parts Collected = " + spacePartsColl);
 
     }
-
+    // Start is called before the first frame update
     void Start()
     {
-        GameObject.FindGameObjectsWithTag("coin"); 
+        
     }
 
+    // Update is called once per frame
     void Update()
-    { 
-      
+    {
+        
     }
-
 }
