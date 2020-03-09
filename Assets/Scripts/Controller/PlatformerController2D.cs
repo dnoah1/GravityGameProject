@@ -67,7 +67,11 @@ public class PlatformerController2D : MonoBehaviour
 	[Header("GameObjects")]
 	[Tooltip("Used to get positioning")]
 	public GameObject groundObject;
-	
+
+	public AudioClip jumpSound;
+	public AudioClip flipSound;
+
+	AudioSource audio;
 
 	SpriteRenderer sr = null;
     int currentFrame = 0;
@@ -95,6 +99,7 @@ public class PlatformerController2D : MonoBehaviour
 
 	void Start ()
 	{
+		audio = gameObject.AddComponent<AudioSource>();
 		lastInputFlip = float.NegativeInfinity;
 		lastInputJump = float.NegativeInfinity;
 		canMove = true;
@@ -139,6 +144,7 @@ public class PlatformerController2D : MonoBehaviour
 
 	Vector2 ApplyJump (Vector2 vel)
 	{
+		audio.PlayOneShot(jumpSound);
 		Debug.Log("jump");
 		float relativeJumpVelocity = jumpVelocity;
         if(gravity < 0) { relativeJumpVelocity = -jumpVelocity;  }
@@ -150,6 +156,7 @@ public class PlatformerController2D : MonoBehaviour
 
 	void ApplyFlip()
 	{
+		audio.PlayOneShot(flipSound);
 		Debug.Log("flip");
 		lastFlipTime = Time.time;
         grounded = false;
