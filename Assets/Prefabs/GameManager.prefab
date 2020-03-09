@@ -43,3 +43,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca10349d890564b899a1d9aea48754bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalSpaceParts: 0
+  guiSkin: {fileID: 11400000, guid: e308d81686e674ad2be9b850bdd9258f, type: 2}
+  heartSprites:
+  - {fileID: 4432793351920879750, guid: f47fd20b461d04c59baf418b1d463e5a, type: 3}
+  - {fileID: 5642012044021194823, guid: f47fd20b461d04c59baf418b1d463e5a, type: 3}
+  - {fileID: 8124259339964715380, guid: f47fd20b461d04c59baf418b1d463e5a, type: 3}
+  - {fileID: 366615594880959974, guid: f47fd20b461d04c59baf418b1d463e5a, type: 3}
+  - {fileID: -35186699611894704, guid: f47fd20b461d04c59baf418b1d463e5a, type: 3}
+  - {fileID: 3631281003583422710, guid: f47fd20b461d04c59baf418b1d463e5a, type: 3}

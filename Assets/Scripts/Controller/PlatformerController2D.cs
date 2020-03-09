@@ -93,6 +93,8 @@ public class PlatformerController2D : MonoBehaviour
 	public bool isImgOn;
 	public Image spPart;
 
+	public GameManager gameManager;
+
 	void Start ()
 	{
 		lastInputFlip = float.NegativeInfinity;
@@ -387,6 +389,7 @@ public class PlatformerController2D : MonoBehaviour
 			coinScore++;
 			Destroy(collision.gameObject);
 			Debug.Log("score is: " + coinScore);
+			GameManager.instance.AdjustScore(1);
 			
 
 		}
@@ -402,6 +405,7 @@ public class PlatformerController2D : MonoBehaviour
     private void hurt()
     {
 		numLives--;
+		gameManager.DecreaseLives();
 		StartCoroutine(blinkSprite());
 	}
 

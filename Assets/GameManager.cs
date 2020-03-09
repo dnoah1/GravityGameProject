@@ -1,14 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+ 
 public class GameManager : MonoBehaviour
 {
     private string welcomeMsg = "Welcome to Gravity game\n heres what to do..";
 
     private int spacePartsColl;
-
+    public int totalSpaceParts;
+    private GUIStyle guiStyle = new GUIStyle();
+    private int numLives;
     public static GameManager instance;
+    public GUISkin guiSkin;
+    //private mainCharacter;
+
+
+    public Sprite[] heartSprites;
+//public Image heart;
 
     private void Awake()
     {
@@ -22,19 +31,29 @@ public class GameManager : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 100, 100), welcomeMsg);
-        GUI.Label(new Rect(10, 110, 500, 40), "Parts Collected = " + spacePartsColl);
+        guiStyle.fontSize = 50;
+        GUI.color = Color.white;
+        guiStyle.normal.textColor = Color.white;
+        GUI.skin = guiSkin ;
+        GUI.Label(new Rect(1150, 690, 0, 0), "Parts Collected: " + spacePartsColl +
+            "\nParts needed: " + totalSpaceParts, guiStyle);
+        
 
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+        numLives = 5;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+      //  heart.sprite = heartSprites[numLives];
+    }
+
+    public void DecreaseLives()
+    {
+        numLives--;
     }
 }
