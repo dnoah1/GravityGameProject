@@ -8,7 +8,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Script for general purpose 2D controls for any object that can move and jump when grounded.
@@ -99,6 +100,7 @@ public class PlatformerController2D : MonoBehaviour
 
 	public GameManager gameManager;
 
+	
 	void Start ()
 	{
 		audio = gameObject.AddComponent<AudioSource>();
@@ -413,7 +415,10 @@ public class PlatformerController2D : MonoBehaviour
     private void die()
     {
 		Debug.Log("die"); //Restart level or end game?
-    }
+		Scene loadedLevel = SceneManager.GetActiveScene();
+		SceneManager.LoadScene(loadedLevel.buildIndex);
+
+	}
 
     private void hurt()
     {
