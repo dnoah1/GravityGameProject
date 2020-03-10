@@ -100,6 +100,7 @@ public class PlatformerController2D : MonoBehaviour
 
 	public GameManager gameManager;
 
+	
 	void Start ()
 	{
 		audio = gameObject.AddComponent<AudioSource>();
@@ -366,6 +367,12 @@ public class PlatformerController2D : MonoBehaviour
 
 		}
 
+		if (collision.gameObject.tag.Equals("Boundary"))
+		{
+			die();
+			
+		}
+
 		//if (collision.gameObject.tag.Equals("Enemy"))
 		//{
 		//	numLives--;
@@ -408,11 +415,12 @@ public class PlatformerController2D : MonoBehaviour
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
 
-	private void hurt()
+
+    private void hurt()
     {
 		numLives--;
-		GameManager.instance.DecreaseLives(); // have to drag on player in scene
-		StartCoroutine(blinkSprite());
+        GameManager.instance.DecreaseLives();
+        StartCoroutine(blinkSprite());
 	}
 
 
