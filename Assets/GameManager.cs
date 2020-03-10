@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
 
     public Sprite[] heartSprites;
     public Image heart;
+    public Text lifeText;
 
     private void Awake()
     {
@@ -31,12 +32,15 @@ public class GameManager : MonoBehaviour
 
     void OnGUI()
     {
-        guiStyle.fontSize = 50;
-        GUI.color = Color.white;
-        guiStyle.normal.textColor = Color.white;
-        GUI.skin = guiSkin ;
-        GUI.Label(new Rect(1150, 690, 0, 0), "Parts Collected: " + spacePartsColl +
-            "\nParts needed: " + totalSpaceParts, guiStyle);
+        //guiStyle.fontSize = 50;
+        //GUI.color = Color.white;
+        //guiStyle.normal.textColor = Color.white;
+        //GUI.skin = guiSkin ;
+        //GUI.Label(new Rect(1150, 690, 0, 0), "Parts Collected: " + spacePartsColl +
+        //    "\nParts needed: " + totalSpaceParts, guiStyle);
+
+        lifeText.text = "Parts Collected: " + spacePartsColl +
+            "\nParts needed: " + totalSpaceParts;
     }
     // Start is called before the first frame update
     void Start()
