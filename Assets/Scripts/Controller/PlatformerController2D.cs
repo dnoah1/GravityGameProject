@@ -8,7 +8,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Script for general purpose 2D controls for any object that can move and jump when grounded.
@@ -92,7 +93,7 @@ public class PlatformerController2D : MonoBehaviour
 
 	int coinScore = 0;
 
-	int numLives = 1;
+	int numLives = 5;
 
 	public bool isImgOn;
 	public Image spPart;
@@ -107,7 +108,7 @@ public class PlatformerController2D : MonoBehaviour
 		canMove = true;
 		rb2d = GetComponent<Rigidbody2D> ();
 		sr = GetComponent<SpriteRenderer> ();
-		numLives = 4;
+		numLives = 5;
 	}
 
 	/// <summary>
@@ -358,7 +359,6 @@ public class PlatformerController2D : MonoBehaviour
         if (collision.gameObject.tag.Equals("Spike"))
         {
 			hurt();
-			Debug.Log(numLives);
 			if (numLives == 0)
             {
 				die();
@@ -381,7 +381,6 @@ public class PlatformerController2D : MonoBehaviour
 		if (collision.gameObject.tag.Equals("Enemy"))
         {
 			hurt();
-			Debug.Log(numLives);
 			if (numLives == 0)
 			{
 				die();
@@ -397,7 +396,6 @@ public class PlatformerController2D : MonoBehaviour
 			Destroy(collision.gameObject);
 			Debug.Log("score is: " + coinScore);
 			GameManager.instance.AdjustScore(1);
-			
 
 		}
 
@@ -407,12 +405,13 @@ public class PlatformerController2D : MonoBehaviour
     private void die()
     {
 		Debug.Log("die"); //Restart level or end game?
-    }
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+	}
 
-    private void hurt()
+	private void hurt()
     {
 		numLives--;
-		gameManager.DecreaseLives();
+		GameManager.instance.DecreaseLives(); // have to drag on player in scene
 		StartCoroutine(blinkSprite());
 	}
 

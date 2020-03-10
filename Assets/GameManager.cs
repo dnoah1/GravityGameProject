@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
 
 
     public Sprite[] heartSprites;
-//public Image heart;
+    public Image heart;
 
     private void Awake()
     {
@@ -37,19 +37,18 @@ public class GameManager : MonoBehaviour
         GUI.skin = guiSkin ;
         GUI.Label(new Rect(1150, 690, 0, 0), "Parts Collected: " + spacePartsColl +
             "\nParts needed: " + totalSpaceParts, guiStyle);
-        
-
     }
     // Start is called before the first frame update
     void Start()
     {
         numLives = 5;
+        heart.sprite = heartSprites[0];
     }
 
     // Update is called once per frame
     void Update()
     {
-      //  heart.sprite = heartSprites[numLives];
+        heart.sprite = heartSprites[numLives];
     }
 
     public void DecreaseLives()
