@@ -87,6 +87,7 @@ public class PlatformerController2D : MonoBehaviour
 	float lastFlipTime = 0;
 	float lastInputJump = 0;
 	float lastInputFlip = 0;
+	float lastHurtTime = 0;
 
 	int facing = 1;
 	int raycastMultiplier = 1;
@@ -418,6 +419,11 @@ public class PlatformerController2D : MonoBehaviour
 
     private void hurt()
     {
+		if(Time.time <= lastJumpTime + Time.deltaTime)
+        {
+			return;
+        }
+		lastHurtTime = Time.deltaTime;
 		numLives--;
         GameManager.instance.DecreaseLives();
         StartCoroutine(blinkSprite());
