@@ -7,7 +7,7 @@ public class Timer : MonoBehaviour
 { 
     private string welcomeMsg = "Welcome to Gravity game\n heres what to do..";
 
-    private int spacePartsColl;
+    public int spacePartsColl;
 
     public static Timer instance;
 

@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     private string welcomeMsg = "Welcome to Gravity game\n heres what to do..";
 
-    private int spacePartsColl;
+    public int spacePartsColl;
     public int totalSpaceParts;
     private GUIStyle guiStyle = new GUIStyle();
     private int numLives;
@@ -23,6 +23,14 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+    }
+
+    public bool canWin()
+    {
+        //Debug.Log(totalSpaceParts);
+        //Debug.Log(spacePartsColl);
+        Debug.Log(totalSpaceParts == spacePartsColl);
+        return (totalSpaceParts == spacePartsColl);
     }
 
     public void AdjustScore(int num)
