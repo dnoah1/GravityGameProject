@@ -2617,6 +2617,11 @@ PrefabInstance:
       propertyPath: jumpSound
       value: 
       objectReference: {fileID: 8300000, guid: 00ac9177cf1fc49869fff62bc7093657, type: 3}
+    - target: {fileID: 114201831273264340, guid: a9e48ad772845c94b95626d3a3e0b25a,
+        type: 3}
+      propertyPath: collect
+      value: 
+      objectReference: {fileID: 8300000, guid: f2ff217d432494c67a65d3562cdd1723, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9e48ad772845c94b95626d3a3e0b25a, type: 3}
 --- !u!1001 &230547462

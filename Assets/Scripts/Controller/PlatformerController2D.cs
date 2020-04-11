@@ -71,6 +71,7 @@ public class PlatformerController2D : MonoBehaviour
 
 	public AudioClip jumpSound;
 	public AudioClip flipSound;
+	public AudioClip collect;
 
 	AudioSource audio;
 
@@ -398,7 +399,7 @@ public class PlatformerController2D : MonoBehaviour
         Debug.Log(collision.gameObject.name + " : " + gameObject.name + " : " + Time.time);
 		if (collision.CompareTag("coin"))
 		{
-
+			audio.PlayOneShot(collect);
 			Debug.Log("collided with coin");
 			coinScore++;
 			Destroy(collision.gameObject);
